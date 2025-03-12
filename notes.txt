@@ -1,0 +1,23 @@
+fa-shake
+
+
+<div class="taskcard-viewer row">
+    <div class="taskcard">
+        <div class="taskcard-bar-container row-sa">
+            <div class="taskcard-bar row-sb">
+                <div class="tasknumber"><span>TASK</span></div>
+                <div class="taskcard-properties row-sa">
+                    <div class="taskcard-priority-color green"></div>
+                    <div class="taskcard-editable"><i class="fa-solid fa-lock fa-lg" style="color: #edeee9;"></i></div>
+                    <div class="taskcard-remove"><i class="fa-solid fa-xmark fa-xl" style="color: #edeee9;"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="taskcard-content">
+            <p>Hello</p>
+        </div>
+    </div>
+</div>
+
+
+

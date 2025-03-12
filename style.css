@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ------------------------------------------- DISPLAY PROPERTIES */
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-fe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.row-sa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-sb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-fs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.active{
+    border: 2px solid black;
+}
+
+
+/* ------------------------------------------- FONTS */
+
+/* font-family: "Damion", cursive; */
+/* font-family: "Poppins", sans-serif; */
+
+
+/* MAIN */
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+}
+
+/* ------------------------------------------- NAVBAR */
+
+.navbar-main-container{
+    width: 100%;
+    height: 6vh;
+    background-color: black;
+    color: rgb(237, 238, 233);
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar-main-container > h2{
+    font-family: "Damion", cursive;
+    font-size: 2.2rem;
+}
+
+/* ------------------------------------------- TASK PROPERTIES */
+
+.task-properties-container h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.task-properties-container span{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.task-properties-container p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.task-properties-container{
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: rgb(237, 238, 233);
+    transform: translateY(-95vh);
+    position: absolute;
+    z-index: 2;
+}
+
+.task-properties-back{
+    width: 95%;
+    height: 5vh;
+    margin: 80px 0px 40px 0px;
+}
+
+.task-properties{
+    width: 30%;
+    height: 65vh;
+    background-color: rgb(237, 238, 233);
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 30px;
+    opacity: 0;
+}
+
+.prioroty-colors-container{
+    width: 70%;
+    height: 40px;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+
+.task-properties-laber-div{
+    width: 100%;
+}
+
+.prioroty-colors{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.task-content{
+    width: 80%;
+    height: 28vh;
+    margin: 15px 0px;
+    border-radius: 20px;
+    background-color: rgb(237, 238, 233);
+    border: 2px solid black;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+}
+
+button{
+    width: 30%;
+    height: 6vh;
+    margin-bottom: 20px;
+    background-color: black;
+    color: rgb(237, 238, 233);
+    border-radius: 10px;
+}
+
+.task-properties-back:hover{
+    text-decoration: underline;
+}
+
+.green{
+    background-color: rgb(35, 216, 35);
+}
+.blue{
+    background-color: rgb(22, 96, 233);
+}
+.yellow{
+    background-color: rgb(231, 228, 22);
+}
+.red{
+    background-color: rgb(250, 2, 14);
+}
+
+/* ------------------------------------------- TASK VIEW CONTAINER */
+
+.task-view-main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(237, 238, 233);;
+}
+
+/* ------------------------------------------- FILTERS */
+
+.task-accessability-bar{
+    width: 40%;
+    height: 10vh;
+    margin: 80px 0px 10px 0px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding: 0px 30px;
+}
+
+.task-filter-section{
+    width: 40%;
+    height: 40px;
+}
+
+
+/* ------------------------------------------- TASKCARDS */
+
+.taskcards-view h3{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.task-adder-container p{
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 20px;
+    background-color: black;
+    color: rgb(237, 238, 233);
+    border-radius: 10px;
+}
+
+.taskcards-view-container{
+    width: 90%;
+    height: 75vh;
+}
+
+.taskcards-view{
+    width: 23%;
+    height: 70vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.task-green{
+    border: 1px solid rgb(35, 216, 35);
+}
+.task-blue{
+    border: 1px solid rgb(22, 96, 233);
+}
+.task-yellow{
+    border: 1px solid rgb(231, 228, 22);
+}
+.task-red{
+    border: 1px solid rgb(250, 2, 14);
+}
+
+hr{
+    width: 100%;
+}
+
+.task-label{
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.scrollable-div-container{
+    width: 100%;
+    height: auto;
+}
+
+.scrollable-div{
+    width: 100%;
+    height: 65vh;
+    overflow: scroll;
+}
+
+.scrollable-div::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+.div{
+    width: 100%;
+    height: 30vh;
+}
+
+.filter-task{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+/* ------------------------------------------- TASKCARD */
+
+.taskcard-viewer span{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+}
+
+.taskcard-content p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.taskcard-viewer{
+    width: 100%;
+    height: 20vh;
+}
+
+.taskcard-bar{
+    width: 95%;
+}
+
+.taskcard-properties{
+    width: 30%;
+}
+
+.taskcard{
+    width: 95%;
+    height: 15vh;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.taskcard-bar-container{
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+    color: rgb(237, 238, 233);
+}
+
+.taskcard-priority-color{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.taskcard-content{
+    padding: 10px 8px;
+}
+
+.fa-solid{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 80%) {
+    body {
+        background-color: black;
+    }
+}

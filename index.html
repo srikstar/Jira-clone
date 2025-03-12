@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/67c2e4a2a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Kanban Board</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar-main-container row">
+        <h2>Kanban Board</h2>
+    </nav>
+
+    <!-- TASK PROPERTIES -->
+    <section class="task-properties-container column-fs">
+        <div class="task-properties-back row"><p><i class="fa-solid fa-xmark fa-xl" style="color: #000000;"></i></p></div>
+        <div class="task-properties column-fs">
+            <div class="task-properties-laber-div"><h2>Choose the Priority: </h2></div>
+            <div class="prioroty-colors-container row-sa">
+                <div class="prioroty-colors green active" data-color="green"></div>
+                <div class="prioroty-colors blue" data-color="blue"></div>
+                <div class="prioroty-colors yellow" data-color="yellow"></div>
+                <div class="prioroty-colors red" data-color="red"></div>
+            </div>
+            <div class="task-properties-laber-div"><h2>What's on your mind? </h2></div>
+            <textarea name="task-content" class="task-content"></textarea>
+            <button type="submit">Save &nbsp;&nbsp;<i class="fa-solid fa-check" style="color: #edeee9;"></i></button>
+            <span>Note: Pressing "Home" will also add the ticket to the queue!</span>
+        </div>
+    </section>
+
+    <!-- TASK VIEW CONTAINER -->
+    <section class="task-view-main-container column">
+        
+        <!-- FILTERS -->
+        <div class="task-accessability-bar row-sb">
+            <div class="task-filter-section row-sa">
+                <div class="filter-task filter-green green" data-color="green"></div>
+                <div class="filter-task filter-blue blue" data-color="blue"></div>
+                <div class="filter-task filter-yellow yellow" data-color="yellow"></div>
+                <div class="filter-task filter-red red" data-color="red"></div>
+            </div>
+            <div class="task-adder-container"><p>Add &nbsp;<i class="fa-solid fa-plus" style="color: #edeee9;"></i></p></div>
+        </div>
+
+        <!-- TASKCARDS -->
+        <div class="taskcards-view-container row-sa">
+
+            <!-- GREEN -->
+            <div class="taskcards-view task-green" data-color="green">
+                <div class="task-label"><h3>TODO</h3><hr></div>
+                <div class="scrollable-div-container">
+                    <div class="scrollable-div taskcard-green" data-color="green">
+                        <!-- add dynamic divs -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLUE -->
+            <div class="taskcards-view task-blue" data-color="blue">
+                <div class="task-label"><h3>In Progress</h3><hr></div>
+                <div class="scrollable-div-container">
+                    <div class="scrollable-div taskcard-blue" data-color="blue">
+                    </div>
+                </div>
+            </div>
+
+            <!-- YELLOW -->
+            <div class="taskcards-view task-yellow" data-color="yellow">
+                <div class="task-label"><h3>In QA</h3><hr></div>
+                <div class="scrollable-div-container">
+                    <div class="scrollable-div taskcard-yellow" data-color="yellow">
+                    </div>
+                </div>
+            </div>
+
+            <!-- RED -->
+            <div class="taskcards-view task-red" data-color="red">
+                <div class="task-label"><h3>Done</h3><hr></div>
+                <div class="scrollable-div-container">
+                    <div class="scrollable-div taskcard-red" data-color="red">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>  
+
+    
+    
+    <script src="/script.js"></script>
+</body>
+</html>
